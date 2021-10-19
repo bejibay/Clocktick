@@ -1,6 +1,6 @@
 <script>
 var date, h, m. s, period;
-function showTime (){
+function showTime(){
 
 // create the date object
 date = new Date();
