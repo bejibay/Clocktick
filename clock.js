@@ -1,4 +1,4 @@
-<script>
+
 var date, h, m. s, period;
 function showTime(){
 
@@ -17,6 +17,7 @@ setTimeout(showTime, 500);
 }
 function control(t) {
 if(t<12){return "0"+t;}
-else{return t;}
+else{return t;
 }
-</script>
+}
+
