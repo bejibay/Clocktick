@@ -1,5 +1,5 @@
 
-var date, h, m. s, period;
+var date, h, m; s, period;
 function showTime(){
 
 // create the date object
@@ -9,8 +9,8 @@ m = date.getMonths();
 s = date.getSeconds();
 m  = control(m);
 s  = control(s);
-if(h<12){period="AM";return h;}
-if(h>12){period="PM" return h;}
+if(h<12){period="AM";}
+if(h>12){period="PM";}
 document.getElementById("display").InnerHTML= h+":"+m+":"+s+period;
 setTimeout(showTime, 500);
 
