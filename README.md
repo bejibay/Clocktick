@@ -1,8 +1,8 @@
-# Digital-Clock
-## Technologies
-* JavaScript, HTML and CSS
-### Objectives
-* To demonstrate JavaScript application 
-  in building Digital Clock
-* To demonstrate how to build UI with
-  JavaScript, HTML and CSS
+# ClockTick
+* A digital clock that starts after a page has 
+loaded. It is built with HTML, CSS and JavaScript.
+
+## Applications
+* JavaScript SetTimeout and SetInterval are 
+used in event timings and digital clocks.
+
