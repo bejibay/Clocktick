@@ -11,7 +11,7 @@ m  = control(m);
 s  = control(s);
 if(h<12){period="AM";}
 if(h>12){period="PM";}
-document.getElementById("display").InnerHTML= h+":"+m+":"+s+period;
+document.getElementById("clockTick").InnerHTML= h+":"+m+":"+s+period;
 setTimeout(showTime, 500);
 
 }
