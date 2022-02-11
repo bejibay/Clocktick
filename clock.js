@@ -1,5 +1,5 @@
 
-var date, h, m; s, period;
+var date, h, m, s, period;
 function showTime(){
 
 // create the date object
