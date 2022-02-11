@@ -8,12 +8,12 @@
 <div id="txt"></div>
 
 <script>
-var today, h, m, s;
+
 function startTime() {
-   today = new Date();
-   h = today.getHours();
-   m = today.getMinutes();
-   s = today.getSeconds();
+  const today = new Date();
+ let  h = today.getHours();
+ let  m = today.getMinutes();
+  let s = today.getSeconds();
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s; 
