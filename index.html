@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset ="utf-8">
-<title>Digital Clock</title>
-<meta name="description" content="Digital Clock By Javasript">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="">
-</head>
-<body onload="showTime()">
-<div id="clockTick"></div>
+<html>
+
+<body onload="startTime()">
+
+<h2>JavaScript Clock</h2>
+
+<div id="txt"></div>
+
 <script>
-var today, h, m, s, period;
-function showTime(){
-
-// create the date object
-today = new Date();
-h = today.getHours();
-m = today.getMonths();
-s = today.getSeconds();
-m  = control(m);
-s  = control(s);
-if(h<12){period="AM";}
-if(h>12){period="PM";}
-document.getElementById('clockTick').innerHTML= h+":" + m + ":"+ s;
-setTimeout(showTime,1000);
-
+var today, h, m, s;
+function startTime() {
+   today = new Date();
+   h = today.getHours();
+   m = today.getMinutes();
+   s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s; 
+setTimeout(startTime, 1000);
 }
-function control(t) {
-if(t<10){return "0"+t;}
-else{return t;
-}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
 }
 </script>
+
 </body>
-</head>
 </html>
