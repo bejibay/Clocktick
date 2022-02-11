@@ -22,14 +22,13 @@ m  = control(m);
 s  = control(s);
 if(h<12){period="AM";}
 if(h>12){period="PM";}
-document.getElementById('clockTick').innerHTML= h+":" + m + ":"+ s;
+document.getElementById('clockTick').innerHTML= h + ":" + m + ":"+ s;
 setTimeout(showTime,1000);
 
 }
 function control(t) {
-if(t<12){return "0"+t;}
-else{return t;
-}
+if(t<12){t = "0" + t;}
+return t;
 }
 </script>
 </body>
