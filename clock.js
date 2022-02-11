@@ -12,7 +12,7 @@ s  = control(s);
 if(h<12){period="AM";}
 if(h>12){period="PM";}
 document.getElementById("clockTick").InnerHTML= h+":"+m+":"+s+period;
-setTimeout(showTime, 500);
+setTimeout(showTime,1000);
 
 }
 function control(t) {
