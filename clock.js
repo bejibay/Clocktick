@@ -1,12 +1,12 @@
 
-var date, h, m, s, period;
+var today, h, m, s, period;
 function showTime(){
 
 // create the date object
 date = new Date();
-h = date.getHours();
-m = date.getMonths();
-s = date.getSeconds();
+h = today.getHours();
+m = today.getMonths();
+s = today.getSeconds();
 m  = control(m);
 s  = control(s);
 if(h<12){period="AM";}
