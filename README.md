@@ -3,6 +3,6 @@
 loaded. It is built with HTML, CSS and JavaScript.
 
 ## Applications
-* JavaScript SetTimeout and SetInterval are 
+* JavaScript setTimeout and setInterval are 
 used in event timings and digital clocks.
 
