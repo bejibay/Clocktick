@@ -20,8 +20,8 @@ let m = today.getMonths();
 let s = today.getSeconds();
 m  = control(m);
 s  = control(s);
-if(h<12){period="AM";}
-if(h>12){period="PM";}
+if(h<12){let period="AM";}
+else{period="PM";}
 document.getElementById('clockTick').innerHTML= h + ":" + m + ":"+ s;
 setTimeout(showTime,1000);
 
