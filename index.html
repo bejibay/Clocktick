@@ -10,14 +10,14 @@
 <body onload="showTime()">
 <div id="clockTick"></div>
 <script>
-var today, h, m, s, period;
+
 function showTime(){
 
 // create the date object
-today = new Date();
-h = today.getHours();
-m = today.getMonths();
-s = today.getSeconds();
+const today = new Date();
+let h = today.getHours();
+let m = today.getMonths();
+let s = today.getSeconds();
 m  = control(m);
 s  = control(s);
 if(h<12){period="AM";}
