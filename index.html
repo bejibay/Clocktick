@@ -10,19 +10,19 @@
 <body onload="showTime()">
 <div id="clockTick"></div>
 <script>
-
+var today, h, m, s, period;
 function showTime(){
 
 // create the date object
-const today = new Date();
-let h = today.getHours();
-let m = today.getMinutes();
-let s = today.getSeconds();
+today = new Date();
+h = today.getHours();
+m = today.getMinutes();
+s = today.getSeconds();
 m  = control(m);
 s  = control(s);
-if(h<12){let period="AM";}
-else{period="PM";}
-document.getElementById('clockTick').innerHTML= h + ":" + m + ":"+ s;
+if(h<12){period="AM";}
+if(h>12){period="PM";}
+document.getElementById('clockTick').innerHTML= h + ":" + m + ":"+ s + period;
 setTimeout(showTime,1000);
 
 }
